@@ -1,0 +1,30 @@
+.container {
+    width: 400px;
+    height: 80px;
+    padding: 32px;
+    text-align: center;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -200px;
+    top: 40%;
+    left: 50%;
+
+    
+    animation-duration: 3.5s;           
+    animation-iteration-count: infinite;
+    animation-direction: normal;        
+    animation-name: blink;              
+    
+}
+@keyframes blink {
+    0%, 100% {              /* Defines the properties at these frames */
+        background: #558DCA;
+        color: white;
+    }
+
+    50% {                   /* Defines the properties at these frames */
+        background: #16FEFF;
+        color: black;
+        border-radius: 48px;
+    }
+}
